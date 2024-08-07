@@ -72,6 +72,28 @@ function teste() {
 
 
 }
+
+
+function images() { // função que muda a imagem do resultado a depender do resultado da conversão
+
+}
+
+
+
+
+function reiniciar() {
+    
+    var p = document.getElementById("saida")
+
+     p.innerHTML = ""
+     console.log("chamou")
+
+
+}
+
+
+
+
 //     switch (temp) {
 //         case ("c"):
 //             var res = (input * 1.8) + 38;
