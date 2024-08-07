@@ -1,7 +1,7 @@
 function teste() {
     // var temp = document.getElementById("select").value
 
-    var tempInput = document.getElementById("input-ent").value // valor digitado no input
+    var tempInput = parseFloat(document.getElementById("input-ent").value) // valor digitado no input
     var inputRadio = document.querySelector('input[name = "input-radio"]:checked').value // pega o valor do input-radio marcado
 
     var tempSelect = document.getElementById("select").value // pega a opção selecionada no select
@@ -15,45 +15,52 @@ function teste() {
 
             } else if (inputRadio === "f") { // convert.  DE fahrenheith para celsius
                 var res = (tempInput - 32) / 1.8
-                p.innerHTML = res.toFixed(2)
+                p.innerHTML = res.toFixed(1)
 
             } else if (inputRadio === "k") { // convert. DE kelvin para celsius
                 var res = (tempInput - 273.15)
-                p.innerHTML = res.toFixed(2)
+                p.innerHTML = res.toFixed(1)
             }
             break;
-
 
 
 
         case ('f'): // VALOR do input para FAHREN.
             if (inputRadio === "c") { // convert. DE celsius para FAHREN.
                 var res = (tempInput * 1.8) + 32
-                p.innerHTML = res.toFixed(2)
-
-            if (inputRadio === "f") { // convert. DE FAHREN. para FAHREN.
+                p.innerHTML = res.toFixed(1)
+            
+            } else if (inputRadio === "f") { // convert. DE FAHREN. para FAHREN.
                 p.innerHTML = tempInput
-            }
 
-            if (inputRadio === "k") { // convert. DE FAHREN. para kelvin.
-                var res = (tempInput + 459.67) * 0.55
-                p.innerHTML = res.toFixed(2)
-            }
 
+            } else if (inputRadio === "k") { // convert. DE Kelvin para FAHREN.
+                var res = (tempInput - 273.15) * 9/5 
+                var resDois = res + 32
+                p.innerHTML = resDois.toFixed(1)
             }
+        
 
             break;
 
             case ('k'):
                 if (inputRadio === "c") { // convert. DE celsius para kelvin.
                     var res = tempInput + 273.15
-                    p.innerHTML = res.toFixed(2)
+                    p.innerHTML = res.toFixed(1)
+               
+                } else if (inputRadio === "f") { // convert. DE FAHREN. para kelvin.
+                    var res = (tempInput - 32) / 9 * 5
+                    var resDois = res + 273
+                    p.innerHTML = resDois.toFixed(1)
+
+                } else if (inputRadio === "k") { // convert. DE kelvin para kelvin. 
+                    p.innerHTML = tempInput
+                    
                 }
 
-                if (inputRadio === "f") { // convert. DE celsius para FAHREN. 
-                    var res = 
+                break;
 
-                }
+        
 
     }
 
