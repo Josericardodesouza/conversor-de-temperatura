@@ -64,17 +64,40 @@ function teste() {
 
     }
 
-
-
-
-
-
-
-
 }
 
 
-function images() { // função que muda a imagem do resultado a depender do resultado da conversão
+
+
+function texto() { // função que muda a imagem do resultado a depender do resultado da conversão
+    
+    var p = document.getElementById("saida").innerText
+    var tempSelect = document.getElementById("select").value
+    var frase = document.getElementById("p-frase")
+
+    console.log("teste")
+
+    switch (tempSelect) {
+        case ('c'):
+            if (p < 10) {
+                frase.innerHTML = "Muito frio"
+
+            } else if (p> 1 || p < 10) {
+                frase.innerHTML = "frio"
+
+            } else if (p > 10 || p < 20) {
+                frase.innerHTML = "Ameno"
+
+            } else if (p > 20 || p < 30) {
+                frase.innerHTML = "quente"
+
+            } else if (p > 30) {
+                frase.innerHTML = "Muito quente"
+                
+            }
+
+            break;
+    }
 
 }
 
@@ -84,8 +107,11 @@ function images() { // função que muda a imagem do resultado a depender do res
 function reiniciar() {
     
     var p = document.getElementById("saida")
+    var input = document.getElementById("input-ent")
 
      p.innerHTML = ""
+     input.value = ""
+
      console.log("chamou")
 
 
