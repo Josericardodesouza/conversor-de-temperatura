@@ -1,3 +1,6 @@
+
+
+
 function teste() {
     // var temp = document.getElementById("select").value
 
@@ -78,17 +81,17 @@ function texto() { // função que muda a imagem do resultado a depender do resu
     console.log("teste")
 
     switch (tempSelect) {
-        case ('c'):
+        case ('c'): // caso a conversão foi para celsius
             if (p < 10) {
                 frase.innerHTML = "Muito frio"
 
-            } else if (p> 1 || p < 10) {
+            } else if (p > 1 && p < 10) {
                 frase.innerHTML = "frio"
 
-            } else if (p > 10 || p < 20) {
+            } else if (p > 10 && p < 20) {
                 frase.innerHTML = "Ameno"
 
-            } else if (p > 20 || p < 30) {
+            } else if (p > 20 && p < 30) {
                 frase.innerHTML = "quente"
 
             } else if (p > 30) {
@@ -97,6 +100,47 @@ function texto() { // função que muda a imagem do resultado a depender do resu
             }
 
             break;
+
+        case ('f'):
+            if (p < 32) {
+                frase.innerHTML = "Muito frio"
+
+            } else if (p > 32 && p < 60) {
+                frase.innerHTML = "Frio"
+
+            } else if (p > 60 && p < 77 ) {
+                frase.innerHTML = "ameno"
+
+            } else if (p > 77 && p < 95) {
+                frase.innerHTML = "quente"
+
+            } else if (p > 95) {
+                frase.innerHTML = "Muito quente"
+            }
+
+            break;
+
+        case ('k'):
+            if (p < 273) {
+                frase.innerHTML = "Muito frio"
+
+            } else if (p > 273 && p < 288) {
+                frase.innerHTML = "frio"
+
+            } else if (p > 288 && p < 298) {
+                frase.innerHTML = "ameno"
+
+            } else if (p > 298 && p < 308) {
+                frase.innerHTML = "quente"
+
+            } else if (p > 308) {
+                frase.innerHTML = "Muito quente"
+
+            }
+
+            break;
+
+
     }
 
 }
