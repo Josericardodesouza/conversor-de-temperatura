@@ -11,10 +11,12 @@ function teste() {
 
     var p = document.getElementById("saida")
 
+    var sectionRes = document.getElementById("secao-saida")
+
     switch (tempSelect) {
         case ('c'): // VALOR do input para CELSIUS
             if (inputRadio === "c") { // convertendo DE celsius para celsius
-                p.innerHTML = tempInput
+                p.innerHTML = tempInput.toFixed(1)
 
             } else if (inputRadio === "f") { // convert.  DE fahrenheith para celsius
                 var res = (tempInput - 32) / 1.8
@@ -34,7 +36,7 @@ function teste() {
                 p.innerHTML = res.toFixed(1)
             
             } else if (inputRadio === "f") { // convert. DE FAHREN. para FAHREN.
-                p.innerHTML = tempInput
+                p.innerHTML = tempInput.toFixed(1)
 
 
             } else if (inputRadio === "k") { // convert. DE Kelvin para FAHREN.
@@ -57,7 +59,7 @@ function teste() {
                     p.innerHTML = resDois.toFixed(1)
 
                 } else if (inputRadio === "k") { // convert. DE kelvin para kelvin. 
-                    p.innerHTML = tempInput
+                    p.innerHTML = tempInput.toFixed(1)
                     
                 }
 
@@ -66,6 +68,8 @@ function teste() {
         
 
     }
+
+    sectionRes.scrollIntoView({behavior: 'smooth'})
 
 }
 
@@ -77,7 +81,7 @@ function texto() { // função que muda a imagem do resultado a depender do resu
     var p = document.getElementById("saida").innerText
     var tempSelect = document.getElementById("select").value
     var frase = document.getElementById("p-frase")
-    var section = document.getElementById("secao-saida")
+    var div = document.getElementById("div-img2")
 
     console.log("teste")
 
@@ -85,17 +89,17 @@ function texto() { // função que muda a imagem do resultado a depender do resu
         case ('c'): // caso a conversão foi para celsius
             if (p < 1) {
                 frase.innerHTML = "Muito frio"
-                section.style.backgroundImage = "url(images/pexels-pixabay-358235.jpg)"
+                div.style.backgroundImage = "url(images/pexels-pixabay-358235.jpg)"
 
 
             } else if (p > 1 && p < 10) {
                 frase.innerHTML = "frio"
-                section.style.backgroundImage = "url(images/pexels-emmanuel-codden-1502600-17169274.jpg)"
+                div.style.backgroundImage = "url(images/pexels-emmanuel-codden-1502600-17169274.jpg)"
 
 
             } else if (p > 10 && p < 20) {
                 frase.innerHTML = "Ameno"
-                section.style.backgroundImage = "url(images/pexels-sherissa-r-704096.jpg)"
+                div.style.backgroundImage = "url(images/pexels-sherissa-r-704096.jpg)"
 
             } else if (p > 20 && p < 30) {
                 frase.innerHTML = "quente"
@@ -103,7 +107,7 @@ function texto() { // função que muda a imagem do resultado a depender do resu
 
             } else if (p > 30) {
                 frase.innerHTML = "Muito quente"
-                section.style.backgroundImage = "url(images/pexels-mark-neal-201020-3061495.jpg)"
+                div.style.backgroundImage = "url(images/pexels-mark-neal-201020-3061495.jpg)"
                 
             }
 
@@ -112,7 +116,7 @@ function texto() { // função que muda a imagem do resultado a depender do resu
         case ('f'):
             if (p < 32) {
                 frase.innerHTML = "Muito frio"
-                  section.style.backgroundImage = "url(images/pexels-pixabay-358235.jpg)"
+                  div.style.backgroundImage = "url(images/pexels-pixabay-358235.jpg)"
 
             } else if (p > 32 && p < 60) {
                 frase.innerHTML = "Frio"
@@ -132,7 +136,7 @@ function texto() { // função que muda a imagem do resultado a depender do resu
         case ('k'):
             if (p < 273) {
                 frase.innerHTML = "Muito frio"
-                  section.style.backgroundImage = "url(images/pexels-pixabay-358235.jpg)"
+                  div.style.backgroundImage = "url(images/pexels-pixabay-358235.jpg)"
 
             } else if (p > 273 && p < 288) {
                 frase.innerHTML = "frio"

@@ -7,21 +7,28 @@
     <title>Conversor de temperatura</title>
 </head>
 <body>
-    <header>
-        <div id="titulos">
-            <h1>CONVERSOR DE TEMPERATURAS</h1>
+    <nav>
+        <h1>CONVERSOR DE TEMPERATURAS</h1>
+    </nav>
+        <div id="tituloh2">
             <h2>Vai viajar e gostaria de saber se seu destino vai estar muito frio, frio, quente ou com temperatura amena? Então use nossa ferramenta</h2>
         </div>
 
-    </header>
     <main>
-        <section>
-            <div>
+        <section id="section-ent">
+            <div id="div-img1">
+               
+                
+            </div>
+            <div id="ent">
               <label for="">Insira a temperatura que gostaria de converter: </label>
                 <input type="number" id="input-ent">
-                <div>
+
+                <div id="inputs-radio">
                     <input type="radio" name="input-radio" id="irc" value="c"><label for="irc">Celsius</label>
+                   
                     <input type="radio" name="input-radio" id="irf" value="f"><label for="irf">Fahrenheit</label>
+                   
                     <input type="radio" name="input-radio" id="irk" value="k"><label for="irk">Kelvin</label>
                 </div>
                 <br>
@@ -32,29 +39,39 @@
                     <option value="k">Kelvin (K)</option>
                 </select>
 
-
+                
+            <div id="button">
                 <button onclick="teste(); texto()">Teste</button>
                 <button onclick="reiniciar()">Reiniciar</button>
             </div>
+           
+            </div>
+
 
         </section>
-        <section id="secao-saida">
 
+
+        <section id="secao-saida">
             <div id="div-saida">
-            <p id="saida" style="color: wheat;"></p>
-            <p id="p-frase" style="color: white;"></p>
+            <p id="saida" style="color: wheat;">45,7</p>
+            <p id="p-frase" style="color: white;">FRASE</p>
+            </div>
+
+            <div id="div-img2">
+                <p>imagem</p>
 
             </div>
 
         </section>
-        <footer>
-            <p>Site desenvolvido por</p>
-            <p>José R. de Souza &copy; 2024</p>
-
-        </footer>
 
 
     </main>
+
+    <footer>
+        <p>Site desenvolvido por</p>
+        <p>José R. de Souza &copy; 2024</p>
+
+    </footer>
     
 </body>
 
