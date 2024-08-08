@@ -122,7 +122,8 @@ div#div-img2 {
 
 div#div-saida {
     width: 70%;
-    background-color: rgba(0, 0, 0, 0.792);
+    /* background-color: rgba(0, 0, 0, 0.792); */
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.304));
     text-align: center;
     margin: auto;
 }
@@ -145,6 +146,7 @@ footer {
         width: 95%;
         flex-direction: row;
        margin: auto;
+       margin-bottom: 30px;
     }
 
     div#ent {
@@ -164,6 +166,7 @@ footer {
         flex-direction: row;
         width: 95%;
         margin: auto;
+     
     }
 
     div#div-img2 {
