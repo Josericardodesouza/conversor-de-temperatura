@@ -29,17 +29,17 @@ div#titulos {
 }
   
 h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     font-size: 2.0em;
-    text-wrap: nowrap;
+    color: blue;
     
 }
 
 h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 0.9em;
 }
 
 main {
