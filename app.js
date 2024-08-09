@@ -65,6 +65,8 @@ function teste() {
 
                 break;
 
+                default:
+                    p.innerHTML = "inválido"
         
 
     }
@@ -163,7 +165,8 @@ function texto() { // função que muda a imagem do resultado a depender do resu
 
 
 function reiniciar() {
-    
+
+    var top = document.getElementById("tituloh2")
     var p = document.getElementById("saida")
     var input = document.getElementById("input-ent")
 
@@ -171,6 +174,8 @@ function reiniciar() {
      input.value = ""
 
      console.log("chamou")
+
+     top.scrollIntoView({behavior: "smooth"})
 
 
 }

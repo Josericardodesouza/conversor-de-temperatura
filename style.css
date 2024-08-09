@@ -157,13 +157,14 @@ div#button > button  p {
 
 
 section#section-saida {
-    width: 100%;
+    width: 95%;
     display: flex;
     background-color: whitesmoke;
     flex-direction: column;
     background-size: cover;
     align-items: center;
     border-radius: 10px;
+    margin: auto;
 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.566);
     overflow: hidden;
@@ -194,8 +195,10 @@ p.p-res {
 }
 
 p#saida {
-    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
     font-size: 1.9em;
+    margin: 0;
 }
 
 p#p-frase {
