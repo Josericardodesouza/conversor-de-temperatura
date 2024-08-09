@@ -11,7 +11,7 @@ function teste() {
 
     var p = document.getElementById("saida")
 
-    var sectionRes = document.getElementById("secao-saida")
+    var sectionRes = document.getElementById("section-saida")
 
     switch (tempSelect) {
         case ('c'): // VALOR do input para CELSIUS

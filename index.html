@@ -16,13 +16,14 @@
 
     <main>
         <section id="section-ent">
-            <div id="div-img1">
-               
-                
+
+            <div class="div-img">
+                <img src= "images/thermometer-4353318_1280.jpg" alt="">
             </div>
+
             <div id="ent">
               <label for="">Insira a temperatura que gostaria de converter: </label>
-                <input type="number" id="input-ent">
+                <input type="number" id="input-ent" placeholder="31,0">
 
                 <div id="inputs-radio">
                     <input type="radio" name="input-radio" id="irc" value="c"><label for="irc">Celsius</label>
@@ -41,7 +42,7 @@
 
                 
             <div id="button">
-                <button onclick="teste(); texto()">Teste</button>
+                <button onclick="teste(); texto()">Converter</button>
                 <button onclick="reiniciar()">Reiniciar</button>
             </div>
            
@@ -51,14 +52,18 @@
         </section>
 
 
-        <section id="secao-saida">
+        <section id="section-saida">
+
             <div id="div-saida">
-            <p id="saida" style="color: wheat;">45,7</p>
-            <p id="p-frase" style="color: white;">FRASE</p>
+
+            <div id="box-res">
+                <p id="saida" class="p-res" style="color: black;">45,7</p>
+                <p id="p-frase" class="p-res" style="color: black;">FRASE</p>
+                </div>
             </div>
 
-            <div id="div-img2">
-                <p>imagem</p>
+            <div class="div-img">
+               <img src="images/pexels-mark-neal-201020-3061495.jpg" alt="">
 
             </div>
 
