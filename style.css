@@ -1,5 +1,24 @@
 @charset "UTF-8";
 
+:root {
+    --cor1: #0E131F;
+    --cor2: #9A031E;
+    --corMQ: #E36414;
+    --corQ: #FB8B24;
+    --corAm: #90E39A;
+    --corF: #9B9ECE;
+    --corMF: #6665DD;
+}
+
+
+
+
+
+
+
+
+
+
 body,html {
     width: 100vw;
     box-sizing: border-box;
@@ -9,16 +28,24 @@ body,html {
 nav {
     background-color: green;
     margin: 0;
-    height: 5vh;
+    height: 10vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+ 
+
+ 
 }
 
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: white;
+    text-wrap: wrap;
+  
+   
+  
     
 }
 

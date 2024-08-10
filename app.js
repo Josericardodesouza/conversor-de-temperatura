@@ -83,7 +83,8 @@ function texto() { // função que muda a imagem do resultado a depender do resu
     var p = document.getElementById("saida").innerText
     var tempSelect = document.getElementById("select").value
     var frase = document.getElementById("p-frase")
-    var div = document.getElementById("div-img2")
+    var img = document.getElementById("imgSaida")
+
 
     console.log("teste")
 
@@ -91,25 +92,29 @@ function texto() { // função que muda a imagem do resultado a depender do resu
         case ('c'): // caso a conversão foi para celsius
             if (p < 1) {
                 frase.innerHTML = "Muito frio"
-                div.style.backgroundImage = "url(images/pexels-pixabay-358235.jpg)"
+
+                img.setAttribute('src' ,'images/pexels-pixabay-358235.jpg');
 
 
             } else if (p > 1 && p < 10) {
-                frase.innerHTML = "frio"
-                div.style.backgroundImage = "url(images/pexels-emmanuel-codden-1502600-17169274.jpg)"
+                frase.innerHTML = "Frio"
+                frase.setAttribute('style', 'color: green')
 
+                img.setAttribute('src', 'images/pexels-emmanuel-codden-1502600-17169274.jpg')
+             
 
             } else if (p > 10 && p < 20) {
                 frase.innerHTML = "Ameno"
-                div.style.backgroundImage = "url(images/pexels-sherissa-r-704096.jpg)"
+                img.setAttribute('src', 'images/pexels-sherissa-r-704096.jpg')
+
 
             } else if (p > 20 && p < 30) {
-                frase.innerHTML = "quente"
-                section.style.backgroundImage = "url(images/pexels-viniciusvieirafotografia-2559997.jpg)"
+                frase.innerHTML = "Quente"
+                img.setAttribute('src', 'images/pexels-viniciusvieirafotografia-2559997.jpg')
 
             } else if (p > 30) {
                 frase.innerHTML = "Muito quente"
-                div.style.backgroundImage = "url(images/pexels-mark-neal-201020-3061495.jpg)"
+                img.setAttribute('src', 'images/pexels-mark-neal-201020-3061495.jpg')
                 
             }
 
@@ -118,19 +123,25 @@ function texto() { // função que muda a imagem do resultado a depender do resu
         case ('f'):
             if (p < 32) {
                 frase.innerHTML = "Muito frio"
-                  div.style.backgroundImage = "url(images/pexels-pixabay-358235.jpg)"
+                img.setAttribute('src' ,'images/pexels-pixabay-358235.jpg');
+             
 
             } else if (p > 32 && p < 60) {
                 frase.innerHTML = "Frio"
+                frase.setAttribute('style', 'color: green')
 
             } else if (p > 60 && p < 77 ) {
-                frase.innerHTML = "ameno"
+                frase.innerHTML = "Ameno"
+                img.setAttribute('src', 'images/pexels-sherissa-r-704096.jpg')
 
             } else if (p > 77 && p < 95) {
-                frase.innerHTML = "quente"
+                frase.innerHTML = "Quente"
+                img.setAttribute('src', 'images/pexels-viniciusvieirafotografia-2559997.jpg')
+            
 
             } else if (p > 95) {
                 frase.innerHTML = "Muito quente"
+                img.setAttribute('src', 'images/pexels-mark-neal-201020-3061495.jpg')
             }
 
             break;
@@ -138,19 +149,23 @@ function texto() { // função que muda a imagem do resultado a depender do resu
         case ('k'):
             if (p < 273) {
                 frase.innerHTML = "Muito frio"
-                  div.style.backgroundImage = "url(images/pexels-pixabay-358235.jpg)"
+                img.setAttribute('src' ,'images/pexels-pixabay-358235.jpg');
 
             } else if (p > 273 && p < 288) {
-                frase.innerHTML = "frio"
+                frase.innerHTML = "Frio"
+                frase.setAttribute('style', 'color: green')
 
             } else if (p > 288 && p < 298) {
-                frase.innerHTML = "ameno"
+                frase.innerHTML = "Ameno"
+                img.setAttribute('src', 'images/pexels-sherissa-r-704096.jpg')
 
             } else if (p > 298 && p < 308) {
-                frase.innerHTML = "quente"
+                frase.innerHTML = "Quente"
+                img.setAttribute('src', 'images/pexels-viniciusvieirafotografia-2559997.jpg')
 
             } else if (p > 308) {
                 frase.innerHTML = "Muito quente"
+                img.setAttribute('src', 'images/pexels-mark-neal-201020-3061495.jpg')
 
             }
 
