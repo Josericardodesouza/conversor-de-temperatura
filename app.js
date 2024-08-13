@@ -120,6 +120,15 @@ function texto() { // função que muda a imagem do resultado a depender do resu
     var corAmeno = "#90E39A"
     var corQuente = "#FB8B24"
     var corMq = "#E36414"
+
+    const fraseMF = "Está muito frio. Lembre-se de usar roupas pesadas e, caso esteja viajando para um destino que seja esta a temperatura, leve alguns medicamentos para resfriado. "
+    const fraseFrio = "Está um pouco frio. Mesmo assim, vista-se corretamente para manter o coração quente."
+
+    const fraseAmeno = "Está um clima ameno! Isso é ótimo caso queira dar um passeio em um parque, fazer caminhada ou até mesmo um piquenique."
+
+    const fraseQuente = "Está quente. Lembre-se de se hidratar com frequência e não ficar muito tempo em exposição ao sol."
+
+    const fraseMQ = "Está muito quente! Portanto, evite atividades físicas muito intensas e tome banhos frios regularmente, mas não muito demorados."
     
 
 
@@ -129,7 +138,7 @@ function texto() { // função que muda a imagem do resultado a depender do resu
         case ('c'): // caso a conversão foi para celsius
             if (p < 1) {
                 
-                frase.innerHTML = "Muito frio"
+                frase.innerHTML = fraseMF
                 img.setAttribute('src' ,'images/pexels-pixabay-358235.jpg')
                 numTemp.style.color = corMf
                 pGraus.style.color = corMf
@@ -139,27 +148,27 @@ function texto() { // função que muda a imagem do resultado a depender do resu
 
 
             } else if (p > 1 && p < 10) {
-                frase.innerHTML = "Frio"
+                frase.innerHTML = fraseFrio
                 numTemp.style.color = corFrio
                 pGraus.style.color = corFrio
                 img.setAttribute('src', 'images/pexels-emmanuel-codden-1502600-17169274.jpg')
              
 
             } else if (p > 10 && p < 20) {
-                frase.innerHTML = "Ameno"
+                frase.innerHTML = fraseAmeno
                 numTemp.style.color = corAmeno
                 pGraus.style.color = corAmeno
                 img.setAttribute('src', 'images/pexels-sherissa-r-704096.jpg')
 
 
             } else if (p > 20 && p < 30) {
-                frase.innerHTML = "Quente"
+                frase.innerHTML = fraseQuente
                 numTemp.style.color = corQuente
                 pGraus.style.color = corQuente
                 img.setAttribute('src', 'images/pexels-viniciusvieirafotografia-2559997.jpg')
 
             } else if (p > 30) {
-                frase.innerHTML = "Muito quente"
+                frase.innerHTML = fraseMQ
                 numTemp.style.color = corMq
                 pGraus.style.color = corMq
             
@@ -171,14 +180,14 @@ function texto() { // função que muda a imagem do resultado a depender do resu
 
         case ('f'):
             if (p < 32) {
-                frase.innerHTML = "Muito frio"
+                frase.innerHTML = fraseMF
                 numTemp.style.color = corMf
                 pGraus.style.color = corMf
                 img.setAttribute('src' ,'images/pexels-pixabay-358235.jpg')
              
 
             } else if (p > 32 && p < 60) {
-                frase.innerHTML = "Frio"
+                frase.innerHTML = fraseFrio
                 numTemp.style.color = corFrio
                 pGraus.style.color = corFrio
                 img.setAttribute('src', 'images/pexels-emmanuel-codden-1502600-17169274.jpg')
@@ -186,20 +195,20 @@ function texto() { // função que muda a imagem do resultado a depender do resu
                 
 
             } else if (p > 60 && p < 77 ) {
-                frase.innerHTML = "Ameno"
+                frase.innerHTML = fraseAmeno
                 numTemp.style.color = corAmeno
                 pGraus.style.color = corAmeno
                 img.setAttribute('src', 'images/pexels-sherissa-r-704096.jpg')
 
             } else if (p > 77 && p < 95) {
-                frase.innerHTML = "Quente"
+                frase.innerHTML = fraseQuente
                 numTemp.style.color = corQuente
                 pGraus.style.color = corQuente
                 img.setAttribute('src', 'images/pexels-viniciusvieirafotografia-2559997.jpg')
             
 
             } else if (p > 95) {
-                frase.innerHTML = "Muito quente"
+                frase.innerHTML = fraseMQ
                 numTemp.style.color = corMq
                 pGraus.style.color = corMq
                 img.setAttribute('src', 'images/pexels-mark-neal-201020-3061495.jpg')
@@ -209,31 +218,31 @@ function texto() { // função que muda a imagem do resultado a depender do resu
 
         case ('k'):
             if (p < 273) {
-                frase.innerHTML = "Muito frio"
+                frase.innerHTML = fraseMF
                 numTemp.style.color = corMf
                 pGraus.style.color = corMf
                 img.setAttribute('src' , 'images/pexels-pixabay-358235.jpg')
 
             } else if (p > 273 && p < 288) {
-                frase.innerHTML = "Frio"
+                frase.innerHTML = fraseFrio
                 numTemp.style.color = corFrio
                 pGraus.style.color = corFrio
                 frase.setAttribute('style', 'color: green')
 
             } else if (p > 288 && p < 298) {
-                frase.innerHTML = "Ameno"
+                frase.innerHTML = fraseAmeno
                 numTemp.style.color = corAmeno
                 pGraus.style.color = corAmeno
                 img.setAttribute('src', 'images/pexels-sherissa-r-704096.jpg')
 
             } else if (p > 298 && p < 308) {
-                frase.innerHTML = "Quente"
+                frase.innerHTML = fraseQuente
                 numTemp.style.color = corQuente
                 pGraus.style.color = corQuente
                 img.setAttribute('src', 'images/pexels-viniciusvieirafotografia-2559997.jpg')
 
             } else if (p > 308) {
-                frase.innerHTML = "Muito quente"
+                frase.innerHTML = fraseMQ
                 numTemp.style.color = corMq
                 pGraus.style.color = corMq
                 img.setAttribute('src', 'images/pexels-mark-neal-201020-3061495.jpg')
