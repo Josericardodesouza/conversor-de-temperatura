@@ -24,15 +24,18 @@ body, html {
     height: 100vh;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     
 }
 
 header {
+    width: 100vw;
     background-image: url(images/pexels-francesco-ungaro-464346.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
+    padding: 0;
     height: 20vh;
     display: flex;
     align-items: center;
@@ -63,6 +66,7 @@ h2 {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
+    padding: 0;
     margin-top: 60px;
     margin-bottom: 60px;
     font-size: 1.0em;
@@ -135,7 +139,7 @@ div#ent > input {
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid #308BDA;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.437);
     margin: 3px 0 0 0;
     text-align: center;
@@ -151,7 +155,8 @@ div#inputs-radio {
 }
 
 input[type = 'radio'] {
-    accent-color: rgb(128, 73, 0);
+    /* accent-color: rgb(128, 73, 0); */
+    accent-color: #308BDA;
 }
 
 div#ent > select {
@@ -160,7 +165,7 @@ div#ent > select {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid #308BDA;
     margin: 2px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -179,7 +184,7 @@ div#button {
  
 }
 
-div#button > button {
+.btn  {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     width: auto;
@@ -191,14 +196,19 @@ div#button > button {
 }
 
 
-div#button > button:hover {
+.btn > button:hover {
     cursor: pointer;
     box-shadow: 0px 0px 10px #90E39A;
 
 }
 
-div#button > button:active {
+.btn > button:active {
     animation: botoes 1.5s ease;
+}
+
+button#btn-reiniciar {
+    width: 15%;
+    margin: 0px auto 20px auto;
 }
 
 @keyframes botoes {
@@ -218,7 +228,7 @@ div#button > button:active {
     }
 }
 
-div#button > button  p {
+.btn > button  p {
     text-align: center;
 }
 
@@ -230,10 +240,9 @@ button#btn-reiniciar {
 section#section-saida {
     width: 95%;
     display: flex;
-    background-color: gray;
+    /* background-color: gray; */
     flex-direction: column;
     background-size: cover;
-    align-items: center;
     border-radius: 10px;
     margin: auto;
     margin-bottom: 30px;
@@ -253,7 +262,7 @@ div#conteiner1 {
     justify-content: center;
     /* background-color: rgba(0, 0, 0, 0.792); */
     /* background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.304)); */
-    text-align: center;
+    align-items: center;
    
 
 }
@@ -263,9 +272,18 @@ div#box-res {
     display: flex;
     flex-direction: row;
     font-weight: 700;
-    margin: 10px;
+ 
     justify-content: center;
+   
 }
+
+div#box-frase {
+    display: block;
+    width: 95%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 
 p#saida {
     margin-right: 2px;
@@ -280,10 +298,6 @@ p#saida, p#p-graus {
    
 }
 
-p#p-frase {
-    font-weight: 300;
-}
-
 
 /* div#saida > p {
     color: black;
@@ -294,14 +308,22 @@ p#p-frase {
 
 div#div-img2 > img {
     width: 100%;
+   
     
+}
+
+div#img-res {
+    height: 100%;
 }
 
 
 
 
+
+
 footer {
-    background-color: whitesmoke;
+    background-color: #308BDA;
+    background-image: linear-gradient(to top, #4670AA, #308BDA);
     width: 100vw;
     height: auto;
     margin: 0;
@@ -421,6 +443,11 @@ footer > div#footer-icons > img:hover {
         width: 85%;
      
      
+    }
+
+    div#box-frase {
+        width: 75%;
+      
     }
 
     footer > div#footer-icons > img {

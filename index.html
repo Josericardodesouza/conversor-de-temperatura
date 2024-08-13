@@ -7,7 +7,7 @@
     <title>Conversor de temperatura</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <h1>CONVERSOR DE TEMPERATURAS</h1>
     </header>
 
@@ -43,8 +43,8 @@
 
                 
             <div id="button">
-                <button onclick="teste(); texto()" id="btn-converter">Converter</button>
-                <button onclick="reiniciar()" id="btn-reiniciar">Reiniciar</button>
+                <button onclick="teste(); texto()" id="btn-converter" class="btn">Converter</button>
+             
             </div>
            
             </div>
@@ -63,19 +63,21 @@
                     </div>
     
                     <div id="box-frase">
-                        <p id="p-frase" class="p-res"></p>
+                        <p id="p-frase" class="p-res">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sequi exercitationem. Repudiandae, cum aspernatur. Possimus, illo aspernatur? Sed totam a, perferendis temporibus, similique nobis cupiditate alias amet voluptatem, deserunt quia!</p>
                     </div>
 
             </div>
 
             <div id="conteiner2">
                 
-            <div class="div-img">
+            <div class="div-img" id="img-res">
                 <img src="" alt="" id="imgSaida">
  
              </div>
 
             </div>
+
+          
 
            
            
@@ -83,6 +85,8 @@
 
 
         </section>
+
+        <button onclick="reiniciar()" id="btn-reiniciar" class="btn">Reiniciar</button>
 
 
     </main>
