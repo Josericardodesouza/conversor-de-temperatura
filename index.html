@@ -7,10 +7,10 @@
     <title>Conversor de temperatura</title>
 </head>
 <body>
-    <nav>
+    <header>
         <h1>CONVERSOR DE TEMPERATURAS</h1>
-    </nav>
-    
+    </header>
+
         <div id="tituloh2">
             <h2>Vai viajar e gostaria de saber se seu destino vai estar muito frio, frio, quente ou com temperatura amena? Então use nossa ferramenta</h2>
         </div>
@@ -23,8 +23,8 @@
             </div>
 
             <div id="ent">
-              <label for="">Insira a temperatura que gostaria de converter: </label>
-                <input type="number" id="input-ent" placeholder="31,0">
+              <label for="input-ent">Insira a temperatura que gostaria de converter: </label>
+                <input type="number" id="input-ent" name = "input-ent" placeholder="31,0">
 
                 <div id="inputs-radio">
                     <input type="radio" name="input-radio" id="irc" value="c"><label for="irc">Celsius</label>
@@ -34,8 +34,8 @@
                     <input type="radio" name="input-radio" id="irk" value="k"><label for="irk">Kelvin</label>
                 </div>
                 <br>
-                <label>Escolha a temperatura final para a conversão</label>
-                <select id="select">
+                <label for="select">Escolha a temperatura final para a conversão</label>
+                <select id="select" name="select">
                     <option value="c">Celsius (C)</option>
                     <option value="f">Fahrenheit (F)</option>
                     <option value="k">Kelvin (K)</option>
@@ -58,9 +58,14 @@
             <div id="div-saida">
 
             <div id="box-res">
-                <p id="saida" class="p-res" style="color: black;">45,7</p>
-                <p id="p-frase" class="p-res" style="color: black;">FRASE</p>
+                <p id="saida" class="p-res" style= "color: black;"></p>
+                <p class="p-res" id="p-graus" style="color: black;"></p>
                 </div>
+            </div>
+
+            
+            <div id="box-frase">
+                <p id="p-frase" class="p-res"></p>
             </div>
 
             <div class="div-img">
@@ -74,8 +79,15 @@
     </main>
 
     <footer>
-        <p>Site desenvolvido por</p>
-        <p>José R. de Souza &copy; 2024</p>
+        <div id="footer-p">
+            <p>Site desenvolvido por</p>
+            <p>José R. de Souza &copy; 2024</p>
+        </div>
+
+        <div id="footer-icons">
+            <img src="images/icons/github-142-svgrepo-com.svg" alt="ícone logo GitHub"><a target="_blank" href="https://github.com/Josericardodesouza"></a>
+            <img src="images/icons/linkedin-rounded-svgrepo-com.svg" alt="icone logo Linkedin"><a target="_blank" href="https://www.linkedin.com/in/josé-ricardo-de-souza-034a90317"></a>
+        </div>
 
     </footer>
     

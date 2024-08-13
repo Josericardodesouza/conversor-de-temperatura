@@ -7,7 +7,7 @@
     --corQ: #FB8B24;
     --corAm: #90E39A;
     --corF: #9B9ECE;
-    --corMF: #6665DD;
+    --corMF: #12106f;
 }
 
 
@@ -19,34 +19,38 @@
 
 
 
-body,html {
+body, html {
     width: 100vw;
+    height: 100vh;
     box-sizing: border-box;
     margin: 0;
+    
 }
 
-nav {
-    background-color: green;
+header {
+    background-image: url(images/pexels-francesco-ungaro-464346.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0;
-    height: 10vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 5px black;
  
 
  
 }
 
 h1 {
+    width: 90%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    font-size: 0.9em;
-    color: white;
+    font-size: 1.0em;
+    color: black;
     text-wrap: wrap;
-  
-   
-  
-    
 }
 
 
@@ -55,13 +59,19 @@ h1 {
 
 
 h2 {
+    width: 95%;
+    text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    font-size: 0.9em;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 1.0em;
+    font-weight: 300;
 }
 
 main {
     width: 97vw;
+    height: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -75,7 +85,7 @@ section#section-ent {
     justify-content: center;
     background-color: whitesmoke;
     margin: 0 auto 50px auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.566);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.566);
     border-radius: 5px;
     overflow: hidden;
    
@@ -110,18 +120,18 @@ div#ent {
     justify-content: center;
     padding-bottom: 5px;
     padding: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 div#ent > label {
-    width: auto;
     text-align: center;
-    padding: 10px 0px 2px 0px;
+    padding: 10px 0px 10px 0px;
     
 }
 
 div#ent > input {
     width: 20%;
-    height: 20px;
+    height: 30px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -136,7 +146,8 @@ div#inputs-radio {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 10px;   
+   
+   padding-top: 10px;
 }
 
 input[type = 'radio'] {
@@ -151,6 +162,11 @@ div#ent > select {
     border-right: 0;
     border-bottom: 2px solid green;
     margin: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div#ent > select:hover {
+    cursor: pointer;
 }
 
 
@@ -160,9 +176,11 @@ div#button {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 10px;
+ 
 }
 
 div#button > button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     width: auto;
     height: 40px;
@@ -170,6 +188,12 @@ div#button > button {
     border-radius: 4px;
     border: 0px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.507);
+}
+
+
+div#button > button:hover {
+    cursor: pointer;
+
 }
 
 div#button > button  p {
@@ -180,15 +204,18 @@ div#button > button  p {
 section#section-saida {
     width: 95%;
     display: flex;
-    background-color: whitesmoke;
+    background-color: gray;
     flex-direction: column;
     background-size: cover;
     align-items: center;
     border-radius: 10px;
     margin: auto;
+    margin-bottom: 30px;
 
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.566);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.566);
     overflow: hidden;
+    display: none;
+   
   
 
 }
@@ -207,19 +234,22 @@ div#div-saida {
 
 div#box-res {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-weight: 700;
-}
-
-p.p-res {
-
+    margin: 10px;
 }
 
 p#saida {
+    margin-right: 2px;
+}
+
+
+
+p#saida, p#p-graus {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    font-size: 1.9em;
-    margin: 0;
+    font-size: 2.0em;
+   
 }
 
 p#p-frase {
@@ -236,20 +266,54 @@ p#p-frase {
 
 div#div-img2 > img {
     width: 100%;
+    
 }
 
 
 
 
 footer {
-    background-color: blue;
+    background-color: whitesmoke;
     width: 100vw;
-    height: 20vh;
+    height: auto;
     margin: 0;
+    padding: 0;
+    padding-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+footer > div#p-footer {
+    margin: 10px 0px 10px 0px;
+
+}
+
+footer > div#footer-icons {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
 }
 
 
-@media (min-width: 550px) {
+footer  > div#footer-icons > img {
+    margin: 0 10px 0 10px;
+
+    margin-bottom: 0;
+    width: 10%;
+}
+
+
+
+
+@media (min-width: 602px) {
+
+
     section#section-ent {
         width: 85%;
         flex-direction: row;
@@ -258,7 +322,7 @@ footer {
     }
 
     div#ent {
-        width: 70%;
+        width: 90%;
         height: 100%;
     }
 
@@ -279,6 +343,7 @@ footer {
         flex-direction: row;
         width: 95%;
         margin: auto;
+        margin-bottom: 30px;
      
     }
 
@@ -292,24 +357,40 @@ footer {
        
     }
 
+    footer  > div#footer-icons > img {
+        width: 7%;
+    }
+    
+
 
 }
 
 
 @media (min-width: 900px) {
+
+
+
+    
     section#section-ent {
         width: 65%;
         flex-direction: row;
         margin: auto;
         margin-bottom: 30px;
+
     }
 
     section#section-saida {
         flex-direction: row;
         width: 85%;
-        margin: auto;
+     
      
     }
 
+    footer > div#footer-icons > img {
+        width: 3%;
+       
+    }
 
 }
+
+
