@@ -10,6 +10,10 @@ function teste() {
 
     var tempSelect = document.getElementById("select").value // pega a opção selecionada no select
 
+    document.getElementById("btn-converter").style.display = "none"
+    document.getElementById("btn-reiniciar").style.display = "block"
+
+
     var p = document.getElementById("saida")
 
     var sectionRes = document.getElementById("section-saida")
@@ -51,15 +55,18 @@ function teste() {
             if (inputRadio === "c") { // convert. DE celsius para FAHREN.
                 var res = (tempInput * 1.8) + 32
                 p.innerHTML = res.toFixed(1) 
+                pGraus.innerHTML = " ºC"
             
             } else if (inputRadio === "f") { // convert. DE FAHREN. para FAHREN.
                 p.innerHTML = tempInput.toFixed(1) 
+                pGraus.innerHTML = " ºF"
 
 
             } else if (inputRadio === "k") { // convert. DE Kelvin para FAHREN.
                 var res = (tempInput - 273.15) * 9/5 
                 var resDois = res + 32
                 p.innerHTML = resDois.toFixed(1)
+                pGraus.innerHTML = " K"
             }
         
 
@@ -69,14 +76,18 @@ function teste() {
                 if (inputRadio === "c") { // convert. DE celsius para kelvin.
                     var res = tempInput + 273.15
                     p.innerHTML = res.toFixed(1) 
+                     pGraus.innerHTML = " ºC"
                
                 } else if (inputRadio === "f") { // convert. DE FAHREN. para kelvin.
                     var res = (tempInput - 32) / 9 * 5
                     var resDois = res + 273
                     p.innerHTML = resDois.toFixed(1)
+                    pGraus.innerHTML = " ºF"
+
 
                 } else if (inputRadio === "k") { // convert. DE kelvin para kelvin. 
                     p.innerHTML = tempInput.toFixed(1)
+                     pGraus.innerHTML = " K"
                     
                 }
 
@@ -249,6 +260,8 @@ function reiniciar() {
      p.innerHTML = ""
      input.value = ""
      section.style.display = "none"
+      document.getElementById("btn-converter").style.display = "block"
+    document.getElementById("btn-reiniciar").style.display = "none"
 
 
      console.log("chamou")

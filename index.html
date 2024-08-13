@@ -43,8 +43,8 @@
 
                 
             <div id="button">
-                <button onclick="teste(); texto()">Converter</button>
-                <button onclick="reiniciar()">Reiniciar</button>
+                <button onclick="teste(); texto()" id="btn-converter">Converter</button>
+                <button onclick="reiniciar()" id="btn-reiniciar">Reiniciar</button>
             </div>
            
             </div>
@@ -55,23 +55,32 @@
 
         <section id="section-saida">
 
-            <div id="div-saida">
+            <div id="conteiner1">
 
-            <div id="box-res">
-                <p id="saida" class="p-res" style= "color: black;"></p>
-                <p class="p-res" id="p-graus" style="color: black;"></p>
-                </div>
+                <div id="box-res">
+                    <p id="saida" class="p-res" style= "color: black;"></p>
+                    <p class="p-res" id="p-graus" style="color: black;"></p>
+                    </div>
+    
+                    <div id="box-frase">
+                        <p id="p-frase" class="p-res"></p>
+                    </div>
+
             </div>
 
-            
-            <div id="box-frase">
-                <p id="p-frase" class="p-res"></p>
-            </div>
-
+            <div id="conteiner2">
+                
             <div class="div-img">
-               <img src="" alt="" id="imgSaida">
+                <img src="" alt="" id="imgSaida">
+ 
+             </div>
 
             </div>
+
+           
+           
+
+
 
         </section>
 
