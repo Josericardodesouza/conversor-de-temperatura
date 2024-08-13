@@ -209,6 +209,9 @@ div#button {
 button#btn-reiniciar {
     width: 15%;
     margin: 0px auto 20px auto;
+    box-shadow: 0px 0px 2px black;
+    border: none;
+    /* animation: bordaAnimada 4s ease infinite; */
 }
 
 @keyframes botoes {
@@ -225,6 +228,20 @@ button#btn-reiniciar {
     100% {
         transform: scale(1.0);
 
+    }
+}
+
+@keyframes bordaAnimada {
+    0% {
+        box-shadow: 0px 0px 0px #308BDA;
+    }
+
+    50% {
+        box-shadow: 0px 0px 10px #308BDA;
+    }
+
+    100% {
+        box-shadow: 0px 0px 0px #308BDA;
     }
 }
 
