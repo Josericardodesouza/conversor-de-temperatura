@@ -1,4 +1,4 @@
-# Projeto Conversor de Escalas termométricas
+# Projeto Conversor de Escalas Termométricas
  Este projeto oferece ao usuário a possibilidade de converter uma temperatura de uma escala para outra.
 
 ## Linguagens
