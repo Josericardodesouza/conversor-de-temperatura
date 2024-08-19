@@ -218,7 +218,7 @@ function texto() { // função que muda a imagem do resultado a depender do resu
                 frase.innerHTML = fraseQuente
                 numTemp.style.color = corQuente
                 pGraus.style.color = corQuente
-                img.setAttribute('src', 'images/pexels-viniciusvieirafotografia-2559997.jpg')
+                img.setAttribute('src', 'images/praia.jpeg')
             
 
             } else if (p > 95) {
@@ -254,7 +254,7 @@ function texto() { // função que muda a imagem do resultado a depender do resu
                 frase.innerHTML = fraseQuente
                 numTemp.style.color = corQuente
                 pGraus.style.color = corQuente
-                img.setAttribute('src', 'images/pexels-viniciusvieirafotografia-2559997.jpg')
+                img.setAttribute('src', 'images/praia.jpeg')
 
             } else if (p > 308) {
                 frase.innerHTML = fraseMQ
