@@ -103,13 +103,14 @@ section#section-ent {
   margin: 0;
   padding: 0;
   display: block;
+  overflow: hidden;
  
     
 }
 
-.div-img > img {
+.div-img  img {
     width: 100%;
-    height: 100%;
+    height: auto;
 
 }
 
@@ -196,23 +197,23 @@ div#button {
 }
 
 
-.btn > button:hover {
+ button:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 10px #90E39A;
+  
 
 }
 
-.btn > button:active {
+ button:active {
     animation: botoes 1.5s ease;
 }
-
+/* 
 button#btn-reiniciar {
     width: 15%;
     margin: 0px auto 20px auto;
     box-shadow: 0px 0px 2px black;
     border: none;
     /* animation: bordaAnimada 4s ease infinite; */
-}
+ 
 
 @keyframes botoes {
 
@@ -285,6 +286,10 @@ div#conteiner1 {
 }
 
 
+div#vconteiner2 {
+   
+}
+
 div#box-res {
     display: flex;
     flex-direction: row;
@@ -316,6 +321,14 @@ p#saida, p#p-graus {
 }
 
 
+
+
+
+div#img-res > img {
+    height: 100%;
+}
+
+
 /* div#saida > p {
     color: black;
 } */
@@ -323,15 +336,11 @@ p#saida, p#p-graus {
 
 
 
-div#div-img2 > img {
-    width: 100%;
-   
-    
-}
 
-div#img-res {
-    height: 100%;
-}
+
+
+
+
 
 
 
@@ -397,17 +406,6 @@ footer > div#footer-icons > img:hover {
         height: 100%;
     }
 
-    div#div-img {
-        width: 20%;
-        height: 200px;
-        display: block;
-        margin: 0;
-    }
-
-    div#div-img > img {
-        width: 100px;
-        height: 100%;
-    }
 
 
     section#section-saida {

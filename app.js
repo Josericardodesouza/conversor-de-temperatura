@@ -10,10 +10,15 @@ function teste() {
 
     var tempSelect = document.getElementById("select").value // pega a opção selecionada no select
 
-    document.getElementById("btn-converter").style.display = "none"
-    document.getElementById("btn-reiniciar").style.display = "block"
+ 
 
 
+    
+
+    // document.getElementById("btn-converter").style.display = "none"
+    // document.getElementById("btn-reiniciar").style.display = "block"
+
+    
     var p = document.getElementById("saida")
 
     var sectionRes = document.getElementById("section-saida")
@@ -133,11 +138,11 @@ function texto() { // função que muda a imagem do resultado a depender do resu
     const fraseMF = "Está muito frio. Lembre-se de usar roupas pesadas e, caso esteja viajando para um destino que seja esta a temperatura, leve alguns medicamentos para resfriado. "
     const fraseFrio = "Está um pouco frio. Mesmo assim, vista-se corretamente para manter o coração quente."
 
-    const fraseAmeno = "Está um clima ameno! Isso é ótimo caso queira dar um passeio em um parque, fazer caminhada ou até mesmo um piquenique."
+    const fraseAmeno = "A temperatura está amena! Isso é ótimo caso queira dar um passeio em um parque, fazer caminhada ou até mesmo um piquenique."
 
     const fraseQuente = "Está quente. Lembre-se de se hidratar com frequência e não ficar muito tempo em exposição ao sol."
 
-    const fraseMQ = "Está muito quente! Portanto, evite atividades físicas muito intensas e tome banhos frios regularmente, mas não muito demorados."
+    const fraseMQ = "Está muito quente! Portanto, evite atividades físicas muito intensas e procure tomar banhos frios regularmente, mas não muito demorados."
     
 
 
@@ -145,7 +150,7 @@ function texto() { // função que muda a imagem do resultado a depender do resu
 
     switch (tempSelect) {
         case ('c'): // caso a conversão foi para celsius
-            if (p < 1) {
+            if (p <= 1) {
                 
                 frase.innerHTML = fraseMF
                 img.setAttribute('src' ,'images/pexels-pixabay-358235.jpg')
@@ -174,7 +179,7 @@ function texto() { // função que muda a imagem do resultado a depender do resu
                 frase.innerHTML = fraseQuente
                 numTemp.style.color = corQuente
                 pGraus.style.color = corQuente
-                img.setAttribute('src', 'images/pexels-viniciusvieirafotografia-2559997.jpg')
+                img.setAttribute('src', 'images/praia.jpeg')
 
             } else if (p > 30) {
                 frase.innerHTML = fraseMQ
@@ -268,26 +273,26 @@ function texto() { // função que muda a imagem do resultado a depender do resu
 
 
 
-function reiniciar() {
+// function reiniciar() {
 
-    var top = document.getElementById("header")
-    var p = document.getElementById("saida")
-    var input = document.getElementById("input-ent")
-    var section = document.getElementById("section-saida")
+//     var top = document.getElementById("header")
+//     var p = document.getElementById("saida")
+//     var input = document.getElementById("input-ent")
+//     var section = document.getElementById("section-saida")
 
-     p.innerHTML = ""
-     input.value = ""
-     section.style.display = "none"
-      document.getElementById("btn-converter").style.display = "block"
-    document.getElementById("btn-reiniciar").style.display = "none"
-
-
-     console.log("chamou")
-
-     top.scrollIntoView({behavior: "smooth"})
+//      p.innerHTML = ""
+//      input.value = ""
+//      section.style.display = "none"
+//       document.getElementById("btn-converter").style.display = "block"
+//     document.getElementById("btn-reiniciar").style.display = "none"
 
 
-}
+//      console.log("chamou")
+
+//      top.scrollIntoView({behavior: "smooth"})
+
+
+// }
 
 
 
