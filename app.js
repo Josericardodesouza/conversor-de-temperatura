@@ -136,7 +136,7 @@ function texto() { // função que muda a imagem do resultado a depender do resu
     const corMq = "#E36414"
 
     const fraseMF = "Está muito frio. Lembre-se de usar roupas pesadas e, caso esteja viajando para um destino que seja esta a temperatura, leve alguns medicamentos para resfriado. "
-    const fraseFrio = "Está um pouco frio. Mesmo assim, vista-se corretamente para manter o coração quente."
+    const fraseFrio = "Está um pouco frio. Mesmo assim, vista-se adequadamente para manter o coração aquecido."
 
     const fraseAmeno = "A temperatura está amena! Isso é ótimo caso queira dar um passeio em um parque, fazer caminhada ou até mesmo um piquenique."
 
