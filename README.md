@@ -11,7 +11,9 @@
 
 ## Funcionalidades
 
-Conversão para as escalas Celsius, Fahrenheit e Kelvin. Após inserida a temperatura e escolhidas as escalas, o código executa o cálculo e retorna, além do resultado, uma frase de efeito e uma imagem para ilustrar como o clima deve estar de acordo com a temperatura obtida.
+Conversão para as escalas Celsius, Fahrenheit e Kelvin. Após inserida a temperatura e escolhidas as escalas, o código executa o cálculo e retorna, além do resultado, uma frase de efeito e uma imagem para ilustrar como o clima deve estar de acordo com a temperatura obtida;
+
+Responsividade;
 
 ### Links Externos
 
