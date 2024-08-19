@@ -43,17 +43,17 @@ header {
     text-align: center;
     box-shadow: 0 0 5px black;
  
-
- 
 }
 
 h1 {
     width: 90%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    font-size: 1.0em;
-    color: black;
+    font-size: 1.5em;
+    color: white;
     text-wrap: wrap;
+    border: 2px solid white;
+    padding: 5px;
 }
 
 
@@ -283,6 +283,7 @@ div#conteiner1 {
     /* background-color: rgba(0, 0, 0, 0.792); */
     /* background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.304)); */
     align-items: center;
+    background-color: whitesmoke;
    
 
 }
@@ -365,7 +366,7 @@ footer {
     background-color: #308BDA;
     background-image: linear-gradient(to top, #4670AA, #308BDA);
     width: 100vw;
-    height: auto;
+    height: 25vh;
     margin: 20px 0 0 0;
     padding: 0;
     padding-bottom: 4px;
@@ -375,11 +376,13 @@ footer {
     align-items: center;
     box-shadow: 0 0 5px black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
 
 }
 
 footer > div#p-footer {
     margin: 10px 0px 10px 0px;
+    height: auto;
 
 }
 
@@ -393,8 +396,6 @@ footer > div#footer-icons {
 
 footer  > div#footer-icons > img {
     margin: 0 10px 0 10px;
-
-    margin-bottom: 0;
     width: 10%;
 }
 
@@ -455,6 +456,11 @@ footer > div#footer-icons > img:hover {
 
 
 @media (min-width: 900px) {
+
+
+    html, body {
+       overflow-x: hidden;
+    }
 
 
 
