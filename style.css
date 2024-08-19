@@ -92,6 +92,7 @@ section#section-ent {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.566);
     border-radius: 5px;
     overflow: hidden;
+    transition: 2s ease;
    
   
   
@@ -108,9 +109,9 @@ section#section-ent {
     
 }
 
-.div-img  img {
+.div-img > img {
     width: 100%;
-    height: auto;
+    height: 100%;
 
 }
 
@@ -257,17 +258,18 @@ button#btn-reiniciar {
 
 section#section-saida {
     width: 95%;
-    display: flex;
+    height: auto;
+    display: none;
     /* background-color: gray; */
     flex-direction: column;
-    background-size: cover;
-    border-radius: 10px;
+    border-radius: 3px;
     margin: auto;
-    margin-bottom: 30px;
-
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.566);
+    transition: 2s ease;
+    border-radius: 5px;
     overflow: hidden;
-    display: none;
+    
+  
    
   
 
@@ -286,9 +288,7 @@ div#conteiner1 {
 }
 
 
-div#vconteiner2 {
-   
-}
+
 
 div#box-res {
     display: flex;
@@ -320,13 +320,27 @@ p#saida, p#p-graus {
    
 }
 
-
-
-
-
-div#img-res > img {
+div#conteiner2 {
+    width: 100%;
     height: 100%;
 }
+
+
+
+
+
+div#img-res {
+    width: 100%;
+    height: 100%;
+   
+}
+
+div#img-res > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 /* div#saida > p {
@@ -352,7 +366,7 @@ footer {
     background-image: linear-gradient(to top, #4670AA, #308BDA);
     width: 100vw;
     height: auto;
-    margin: 0;
+    margin: 20px 0 0 0;
     padding: 0;
     padding-bottom: 4px;
     display: flex;
