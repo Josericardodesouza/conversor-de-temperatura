@@ -17,7 +17,9 @@ Conversão para as escalas Celsius, Fahrenheit e Kelvin. Após inserida a temper
 
  Link do projeto: https://conversor-temperaturas-jricardo.netlify.app
 
- ## Visão geral da página durante demonstração:
+ ## Visão da página durante demonstração:
+
+ <img src= "images/conversor-temperaturas-jricardo.netlify.app.png" style = "width: 95%">
 
  
 
