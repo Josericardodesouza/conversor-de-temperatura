@@ -241,7 +241,8 @@ function texto() { // função que muda a imagem do resultado a depender do resu
                 frase.innerHTML = fraseFrio
                 numTemp.style.color = corFrio
                 pGraus.style.color = corFrio
-                frase.setAttribute('style', 'color: green')
+                img.setAttribute('src', 'images/pexels-emmanuel-codden-1502600-17169274.jpg')
+                
 
             } else if (p > 288 && p < 298) {
                 frase.innerHTML = fraseAmeno
