@@ -366,7 +366,7 @@ footer {
     background-color: #308BDA;
     background-image: linear-gradient(to top, #4670AA, #308BDA);
     width: 100vw;
-    height: 25vh;
+    height: 30vh;
     margin: 20px 0 0 0;
     padding: 0;
     padding-bottom: 4px;
@@ -388,18 +388,31 @@ footer > div#p-footer {
 
 footer > div#footer-icons {
     display: flex;
-    justify-content: center;
+  
+    flex-direction: column;
     margin: 0;
 
 }
 
+footer > div#footer-icons > a {
+    display: block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    
+}
 
-footer  > div#footer-icons > img {
+
+footer  > div#footer-icons > a > img {
     margin: 0 10px 0 10px;
     width: 10%;
 }
 
-footer > div#footer-icons > img:hover {
+footer > div#footer-icons > a > img:hover {
     cursor: pointer;
 }
 
@@ -446,7 +459,7 @@ footer > div#footer-icons > img:hover {
        
     }
 
-    footer  > div#footer-icons > img {
+    footer  > div#footer-icons > a > img {
         width: 7%;
     }
     
@@ -485,8 +498,8 @@ footer > div#footer-icons > img:hover {
       
     }
 
-    footer > div#footer-icons > img {
-        width: 3%;
+    footer > div#footer-icons > a > img {
+        width: 7%;
        
     }
 
