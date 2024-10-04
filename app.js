@@ -1,7 +1,7 @@
 
 
 
-function teste() {
+function Executar() {
     // var temp = document.getElementById("select").value
 
     var tempInput = parseFloat(document.getElementById("input-ent").value) // valor digitado no input
