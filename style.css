@@ -498,18 +498,8 @@ footer > div#footer-icons > a > img:hover {
       
     }
 
-    div#footer-icons {
-       
-        background-color: red;
-        width: 100vw;
-    }
-
-    footer > div#footer-icons > a {
-        width: 40%;
-    }
-
     footer > div#footer-icons > a > img {
-        width: 100px;
+        width: 7%;
        
     }
 
