@@ -349,19 +349,6 @@ div#img-res > img {
 } */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     background-color: #308BDA;
     background-image: linear-gradient(to top, #4670AA, #308BDA);
@@ -369,7 +356,7 @@ footer {
     height: 30vh;
     margin: 20px 0 0 0;
     padding: 0;
-    padding-bottom: 4px;
+    padding-bottom: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -462,6 +449,11 @@ footer > div#footer-icons > a > img:hover {
     footer  > div#footer-icons > a > img {
         width: 7%;
     }
+
+
+    footer > a {
+        margin: 0;
+    }
     
 
 
@@ -498,10 +490,39 @@ footer > div#footer-icons > a > img:hover {
       
     }
 
-    footer > div#footer-icons > a > img {
-        width: 7%;
+
+    footer > div#footer-icons > a {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer > div#footer-icons > a#a-github {
+        display: flex;
+        justify-content: right;
+    }
+
+     footer > div#footer-icons > a#a-linkedin {
+        display: flex;
+        justify-content: left;
+    }
+
+   
+
+
+    
+
+    footer > div#footer-icons {
+        flex-direction: row;
+        justify-content: center;
        
     }
+
+      footer  > div#footer-icons > a > img {
+        width: 10%;
+    }
+
+
+
 
 }
 
