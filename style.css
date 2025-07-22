@@ -492,6 +492,7 @@ footer > div#footer-icons > a > img:hover {
 
 
     footer > div#footer-icons > a {
+      
         display: flex;
         justify-content: center;
     }
@@ -517,8 +518,8 @@ footer > div#footer-icons > a > img:hover {
        
     }
 
-      footer  > div#footer-icons > a > img {
-        width: 10%;
+      footer > div#footer-icons > a > img {
+        width: 50px;
     }
 
 
