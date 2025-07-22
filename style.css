@@ -135,6 +135,23 @@ div#ent > label {
     
 }
 
+
+
+div#inputs-radio > input:hover {
+    cursor: pointer;
+}
+
+
+
+option:hover {
+    cursor: pointer;
+}
+
+ label:hover {
+    cursor: pointer;
+}
+
+
 div#ent > input {
     width: 20%;
     height: 30px;
@@ -175,6 +192,8 @@ div#ent > select {
 div#ent > select:hover {
     cursor: pointer;
 }
+
+
 
 
 div#button {
